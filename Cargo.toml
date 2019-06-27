@@ -1,0 +1,12 @@
+[package]
+name = "lungfish"
+version = "0.1.0"
+authors = ["notryanb@gmail.com <notryanb@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+askama = "0.8"
+pulldown-cmark = "0.5"
+serde = "1.0"
+serde_yaml = "0.8"
+walkdir = "2.2"
