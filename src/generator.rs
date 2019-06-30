@@ -6,9 +6,7 @@ use std::io::prelude::*;
 use std::ffi::OsStr;
 use std::path::Path;
 
-
-fn main() {
-    // Read files from directory
+pub fn generate() {
     let files = WalkDir::new("./base")
         .into_iter()
         .filter_map(|e| e.ok())
