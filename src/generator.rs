@@ -32,7 +32,6 @@ pub fn generate() {
         html::push_html(&mut html_output, parser);
 
         let content = ContentTemplate { content: &html_output };
-
         let html_file_name = Path::new("./build").join(file_path.file_stem().expect("missing file stem")).with_extension("html");
 
         let mut file = File::create(html_file_name).expect("Couldn't create file");
